@@ -42,7 +42,7 @@ center
 
 # 7. Calculate the z-score for each data point. Recall that the z-score is given by:
 
-z_score = (x - np.mean(a)) / np.std(a)
+z_score = (a - np.mean(a)) / np.std(a)
 
 # 8. Copy the setup and exercise directions from More Numpy Practice into your 
 # numpy_exercises.py and add your solutions.
@@ -249,7 +249,7 @@ np.dot(c, c)
 # Exercise 7 - Write the code necessary to sum up the result of c times c transposed. 
 # Answer should be 261
 
-sum(sum(c * np.transpose(c)))
+np.sum(c * np.transpose(c))
 
 # Exercise 8 - Write the code necessary to determine the product of c times c 
 # transposed. Answer should be 131681894400.
