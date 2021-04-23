@@ -7,9 +7,13 @@ a = np.array([4, 10, 12, 23, -2, -1, 0, 0, 0, -6, 3, -7])
 
 len(a[a < 0])
 
+a[a < 0].shape[0]
+
 # 2. How many positive numbers are there?
 
 len(a[a > 0])
+
+a[a > 0].shape[0]
 
 # 3. How many even positive numbers are there?
 
